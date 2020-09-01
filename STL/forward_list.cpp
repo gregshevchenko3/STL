@@ -108,6 +108,7 @@ void forward_list::erase_value(int value)
 			el = el->m_next;
 		}
 	}
+	
 }
 void forward_list::push_back(int value)
 {

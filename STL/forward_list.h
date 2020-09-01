@@ -3,14 +3,13 @@
 #include <initializer_list>
 #include <iterator>
 
-
 class forward_list
 {
 	class Element {
 		int m_data;
 		Element* m_next;
 	public:
-		Element(int data, Element* next = nullptr);
+		Element(int data, const Element* next = nullptr);
 		Element(const Element& other);
 		~Element();
 		void debug();
