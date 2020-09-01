@@ -9,7 +9,7 @@ class forward_list
 		int m_data;
 		Element* m_next;
 	public:
-		Element(int data, const Element* next = nullptr);
+		Element(int data, Element* next = nullptr);
 		Element(const Element& other);
 		~Element();
 		void debug();
